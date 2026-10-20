@@ -1,0 +1,399 @@
+<x-layouts.site>
+      <!-- ===================== HERO ===================== -->
+      <section id="accueil" class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-linear-180 from-brand-100 via-brand-50 to-brand-50"></div>
+        <div class="absolute -top-24 -right-24 -z-10 size-96 rounded-full bg-sun-400/30 blur-3xl"></div>
+        <div class="absolute -bottom-32 -left-24 -z-10 size-96 rounded-full bg-brand-400/20 blur-3xl"></div>
+
+        <div class="mx-auto max-w-7xl px-6 pt-16 pb-12 sm:pt-24 lg:px-8 lg:pt-28">
+          <div class="mx-auto max-w-3xl text-center">
+            <p class="inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-1.5 text-sm font-medium text-brand-700 ring-1 ring-brand-500/15">
+              <span class="size-1.5 rounded-full bg-brand-500"></span>
+              Marche-en-Famenne · Chœur amateur depuis 1982
+            </p>
+            <h1 class="mt-6 font-display text-5xl font-semibold tracking-tight text-balance text-stone-900 sm:text-6xl lg:text-7xl">
+              Chorale <span class="text-brand-600">La Touraline</span>
+            </h1>
+            <p class="mx-auto mt-6 max-w-[55ch] text-lg text-pretty text-stone-600">
+              Chanter ensemble, c'est vivre en harmonie. Un chœur à trois voix, un répertoire de variété
+              française et une bande d'amis qui partagent le plaisir de chanter.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <a href="{{ route('home') }}#rejoindre" class="rounded-full bg-brand-500 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600">
+                Nous rejoindre
+              </a>
+              <a href="{{ route('home') }}#chorale" class="inline-flex items-center gap-2 rounded-full bg-brand-500/10 px-6 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-500/15">
+                Découvrir la chorale
+                <svg class="size-5 shrink-0 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10z" clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <figure class="mx-auto mt-14 max-w-5xl">
+            <img src="{{ asset('assets/img/choir-group.jpg') }}" alt="Les membres de la chorale La Touraline réunis lors d'une répétition" class="aspect-[16/9] w-full rounded-3xl object-cover shadow-xl outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===================== QUICK ACCESS (4 icônes) ===================== -->
+      <section class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Concerts -->
+          <a href="{{ route('home') }}#concerts" class="group flex flex-col rounded-2xl bg-white p-6 ring-1 ring-stone-900/5 transition hover:ring-brand-500/30 hover:shadow-md">
+            <svg class="size-6 shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 9 19.5 6m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553z" />
+            </svg>
+            <h3 class="mt-4 font-display text-lg font-semibold text-stone-900">Nos concerts</h3>
+            <p class="mt-1.5 text-sm text-pretty text-stone-600">Variété française et airs de Noël tout au long de l'année.</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">Voir les concerts
+              <svg class="size-4 shrink-0 fill-current transition group-hover:translate-x-0.5" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a.75.75 0 0 1 .75-.75h6.638L8.23 5.29a.75.75 0 1 1 1.04-1.08l3.5 3.25a.75.75 0 0 1 0 1.08l-3.5 3.25a.75.75 0 1 1-1.04-1.08l2.158-1.96H3.75A.75.75 0 0 1 3 8z" /></svg>
+            </span>
+          </a>
+          <!-- Histoire -->
+          <a href="{{ route('home') }}#chorale" class="group flex flex-col rounded-2xl bg-white p-6 ring-1 ring-stone-900/5 transition hover:ring-brand-500/30 hover:shadow-md">
+            <svg class="size-6 shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+            </svg>
+            <h3 class="mt-4 font-display text-lg font-semibold text-stone-900">L'histoire de la chorale</h3>
+            <p class="mt-1.5 text-sm text-pretty text-stone-600">Du « Petit royaume » à La Touraline, plus de 40 ans de chant.</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">Découvrir
+              <svg class="size-4 shrink-0 fill-current transition group-hover:translate-x-0.5" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a.75.75 0 0 1 .75-.75h6.638L8.23 5.29a.75.75 0 1 1 1.04-1.08l3.5 3.25a.75.75 0 0 1 0 1.08l-3.5 3.25a.75.75 0 1 1-1.04-1.08l2.158-1.96H3.75A.75.75 0 0 1 3 8z" /></svg>
+            </span>
+          </a>
+          <!-- Photos -->
+          <a href="{{ route('home') }}#photos" class="group flex flex-col rounded-2xl bg-white p-6 ring-1 ring-stone-900/5 transition hover:ring-brand-500/30 hover:shadow-md">
+            <svg class="size-6 shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0z" />
+            </svg>
+            <h3 class="mt-4 font-display text-lg font-semibold text-stone-900">Albums photos</h3>
+            <p class="mt-1.5 text-sm text-pretty text-stone-600">Les moments forts de la chorale, en images.</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">Voir les photos
+              <svg class="size-4 shrink-0 fill-current transition group-hover:translate-x-0.5" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a.75.75 0 0 1 .75-.75h6.638L8.23 5.29a.75.75 0 1 1 1.04-1.08l3.5 3.25a.75.75 0 0 1 0 1.08l-3.5 3.25a.75.75 0 1 1-1.04-1.08l2.158-1.96H3.75A.75.75 0 0 1 3 8z" /></svg>
+            </span>
+          </a>
+          <!-- Contacts -->
+          <a href="{{ route('home') }}#contact" class="group flex flex-col rounded-2xl bg-white p-6 ring-1 ring-stone-900/5 transition hover:ring-brand-500/30 hover:shadow-md">
+            <svg class="size-6 shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+            <h3 class="mt-4 font-display text-lg font-semibold text-stone-900">Contacts</h3>
+            <p class="mt-1.5 text-sm text-pretty text-stone-600">L'organe de gestion de l'a.s.b.l. et la direction musicale.</p>
+            <span class="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand-700">Nous écrire
+              <svg class="size-4 shrink-0 fill-current transition group-hover:translate-x-0.5" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a.75.75 0 0 1 .75-.75h6.638L8.23 5.29a.75.75 0 1 1 1.04-1.08l3.5 3.25a.75.75 0 0 1 0 1.08l-3.5 3.25a.75.75 0 1 1-1.04-1.08l2.158-1.96H3.75A.75.75 0 0 1 3 8z" /></svg>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===================== LA CHORALE / HISTOIRE ===================== -->
+      <section id="chorale" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+        <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          <div class="order-2 lg:order-1">
+            <p class="text-sm font-semibold tracking-wide text-brand-600">Qui sommes-nous ?</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance text-stone-900 sm:text-5xl">
+              Un peu d'histoire
+            </h2>
+            <div class="mt-6 space-y-4 text-base text-pretty text-stone-600">
+              <p>
+                La chorale <strong class="font-semibold text-stone-800">La Touraline</strong> de Marche-en-Famenne
+                a vu le jour en 1982, sous le nom de « Petit royaume », en référence à une chanson de Julos Beaucarne.
+              </p>
+              <p>
+                Il y a plus de vingt ans, elle a pris son nom actuel en référence au musée marchois
+                « La Tourelle », devenu lui-même le <em>Famenne &amp; Art Museum</em>.
+              </p>
+              <p>
+                Aujourd'hui, nous faisons partie de la fédération <strong class="font-semibold text-stone-800">« À Cœur Joie »</strong>,
+                comme la plupart des chorales de Wallonie et de Bruxelles. Notre répertoire est principalement
+                composé de variété française, et nous abordons aussi des airs traditionnels lors des concerts de Noël.
+              </p>
+            </div>
+
+            <dl class="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-3">
+              <div>
+                <dt class="text-sm text-stone-500">Fondée en</dt>
+                <dd class="mt-1 font-display text-3xl font-semibold tabular-nums text-brand-600">1982</dd>
+              </div>
+              <div>
+                <dt class="text-sm text-stone-500">Choristes</dt>
+                <dd class="mt-1 font-display text-3xl font-semibold tabular-nums text-brand-600">~30</dd>
+              </div>
+              <div>
+                <dt class="text-sm text-stone-500">Voix</dt>
+                <dd class="mt-1 font-display text-3xl font-semibold tabular-nums text-brand-600">3</dd>
+              </div>
+            </dl>
+
+            <p class="mt-8 max-w-[60ch] text-base text-pretty text-stone-600">
+              Nous sommes établis en un chœur à trois voix — <strong class="font-semibold text-stone-800">altos, sopranes et basses</strong> —
+              sous la direction musicale de Christine Wéry.
+            </p>
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <figure class="relative">
+              <img src="{{ asset('assets/img/tourelle.jpg') }}" alt="La Tourelle de Marche-en-Famenne, qui a donné son nom à la chorale" class="aspect-[4/5] w-full rounded-3xl object-cover shadow-lg outline-1 -outline-offset-1 outline-black/10" />
+              <figcaption class="absolute bottom-4 left-4 right-4 rounded-2xl bg-white/90 px-4 py-3 backdrop-blur">
+                <p class="text-sm text-pretty text-stone-700">
+                  <strong class="font-semibold text-stone-900">La Tourelle</strong> — le monument marchois qui a inspiré notre nom.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONCERTS ===================== -->
+      <section id="concerts" class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold tracking-wide text-brand-600">Sur scène</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance text-stone-900 sm:text-5xl">
+              Nos concerts
+            </h2>
+            <p class="mt-6 text-base text-pretty text-stone-600">
+              De la variété française aux concerts de Noël où nous abordons les airs traditionnels,
+              nous aimons partager notre musique avec le public — dans la bonne humeur.
+            </p>
+          </div>
+
+          @if ($concerts->isNotEmpty())
+            <ul role="list" class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              @foreach ($concerts as $concert)
+                <li>
+                  <x-concert-card :concert="$concert" />
+                </li>
+              @endforeach
+            </ul>
+          @else
+            <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <figure class="overflow-hidden rounded-3xl">
+                <img src="{{ asset('assets/img/concert-1.jpg') }}" alt="La chorale La Touraline en représentation" class="aspect-[3/2] w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+              </figure>
+              <figure class="overflow-hidden rounded-3xl">
+                <img src="{{ asset('assets/img/concert-2.jpg') }}" alt="Accompagnement au piano et au violon pendant un concert" class="aspect-[3/2] w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+              </figure>
+            </div>
+          @endif
+
+          <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div class="rounded-2xl bg-brand-50 p-6 ring-1 ring-brand-500/10">
+              <h3 class="font-display text-lg font-semibold text-stone-900">Variété française</h3>
+              <p class="mt-1.5 text-sm text-pretty text-stone-600">Le cœur de notre répertoire, travaillé toute l'année.</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-6 ring-1 ring-brand-500/10">
+              <h3 class="font-display text-lg font-semibold text-stone-900">Concerts de Noël</h3>
+              <p class="mt-1.5 text-sm text-pretty text-stone-600">Des airs traditionnels pour la période des fêtes.</p>
+            </div>
+            <div class="rounded-2xl bg-brand-50 p-6 ring-1 ring-brand-500/10">
+              <h3 class="font-display text-lg font-semibold text-stone-900">À Cœur Joie</h3>
+              <p class="mt-1.5 text-sm text-pretty text-stone-600">Membre de la fédération des chorales de Wallonie et de Bruxelles.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== REJOINDRE ===================== -->
+      <section id="rejoindre" class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-linear-150 from-brand-600 via-brand-500 to-brand-400"></div>
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+          <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+            <div>
+              <p class="text-sm font-semibold tracking-wide text-white/80">Vous souhaitez nous rejoindre ?</p>
+              <h2 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
+                Venez faire un essai
+              </h2>
+              <p class="mt-6 max-w-[55ch] text-lg text-pretty text-white/90">
+                Il fait bon vivre avec notre trentaine de membres. Les répétitions sont à la fois
+                appliquées et relax (oui, c'est possible !). Il n'est pas indispensable de connaître
+                la musique : la volonté et la bonne humeur suffisent.
+              </p>
+
+              <div class="mt-8 rounded-2xl bg-white/10 p-5 ring-1 ring-white/20 backdrop-blur">
+                <p class="text-base text-pretty text-white">
+                  🎵 Nous serions heureux d'étoffer notre jeu en accueillant un
+                  <strong class="font-semibold">pupitre de ténors</strong>. Et vous ?
+                </p>
+              </div>
+
+              <div class="mt-8">
+                <a href="mailto:choralelatouraline@gmail.com" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-base font-semibold text-brand-700 shadow-sm transition hover:bg-brand-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+                  Nous écrire
+                  <svg class="size-5 shrink-0 fill-current" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M3 10a.75.75 0 0 1 .75-.75h10.638L10.23 5.29a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H3.75A.75.75 0 0 1 3 10z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="rounded-3xl bg-white p-8 shadow-xl">
+              <h3 class="font-display text-xl font-semibold text-stone-900">Les répétitions</h3>
+              <ul role="list" class="mt-6 space-y-5">
+                <li class="flex items-start gap-4">
+                  <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-stone-900">Tous les jeudis, de 20h00 à 22h00</p>
+                    <p class="mt-0.5 text-sm text-stone-600">Hors jours fériés et congés scolaires.</p>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-stone-900">E-square, deuxième étage, salle "La Papote"</p>
+                    <p class="mt-0.5 text-sm text-stone-600">Rue Victor Libert 36H, Marche-en-Famenne.</p>
+                    <a href="https://www.openstreetmap.org/search?query=Rue%20Victor%20Libert%2036H%2C%206900%20Marche-en-Famenne" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-sm font-medium text-brand-700 underline underline-offset-2 hover:text-brand-500">Voir sur la carte</a>
+                  </div>
+                </li>
+                <li class="flex items-start gap-4">
+                  <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0z" />
+                  </svg>
+                  <div>
+                    <p class="font-semibold text-stone-900">Aucune expérience requise</p>
+                    <p class="mt-0.5 text-sm text-stone-600">La volonté et la bonne humeur suffisent. À bientôt !</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PHOTOS ===================== -->
+      <section id="photos" class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+        <div class="max-w-2xl">
+          <p class="text-sm font-semibold tracking-wide text-brand-600">En images</p>
+          <h2 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance text-stone-900 sm:text-5xl">
+            Albums photos
+          </h2>
+          <p class="mt-6 text-base text-pretty text-stone-600">
+            Un aperçu de notre vie de chorale : répétitions, concerts et petits clins d'œil musicaux.
+          </p>
+        </div>
+
+        <div class="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <figure class="col-span-2 row-span-2 overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/choir-group.jpg') }}" alt="Photo de groupe de la chorale La Touraline" class="size-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/concert-1.jpg') }}" alt="La chorale en représentation" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/concert-2.jpg') }}" alt="Accompagnement musical pendant un concert" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/illus-bonheur.jpg') }}" alt="Illustration : le bonheur est dans le chant choral" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/poster-join.jpg') }}" alt="Affiche : rejoignez la chorale La Touraline" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/tourelle.jpg') }}" alt="La Tourelle de Marche-en-Famenne" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/illus-chant.jpg') }}" alt="Illustration : chanter en chorale fait du bien" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+          <figure class="overflow-hidden rounded-2xl">
+            <img src="{{ asset('assets/img/meme-chante.jpg') }}" alt="Petit clin d'œil musical : quand tu es triste, chante" class="aspect-square w-full object-cover outline-1 -outline-offset-1 outline-black/10" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="bg-white">
+        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold tracking-wide text-brand-600">Nous contacter</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold tracking-tight text-balance text-stone-900 sm:text-5xl">
+              L'équipe de La Touraline
+            </h2>
+            <p class="mt-6 text-base text-pretty text-stone-600">
+              L'organe de gestion de l'a.s.b.l. La Touraline et la direction musicale.
+            </p>
+          </div>
+
+          <ul role="list" class="mt-12 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Christine Wéry</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Cheffe de chœur</p>
+              <a href="mailto:christinewery1@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">christinewery1@gmail.com</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Pierre Vencencius</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Président</p>
+              <a href="mailto:p.vencencius@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">p.vencencius@gmail.com</a>
+              <a href="tel:+32478921017" class="mt-1 block text-sm text-stone-600 hover:text-brand-700">+32 486 78 88 83</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Nathalie Decoeur</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Vice-présidente &amp; secrétaire</p>
+              <a href="mailto:nathalie.decoeur@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">nathalie.decoeur@gmail.com</a>
+              <a href="tel:+32486788883" class="mt-1 block text-sm text-stone-600 hover:text-brand-700">+32 486 78 88 83</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Marc Hick</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Trésorier</p>
+              <a href="mailto:cramhick@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">cramhick@gmail.com</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Christiane Bellemans</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Présidente honoraire &amp; administratrice</p>
+              <a href="mailto:cbabeille7@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">cbabeille7@gmail.com</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Véronique Hauchart</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Administratrice</p>
+              <a href="mailto:veflanto@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">veflanto@gmail.com</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Isabelle Mottet</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Administratrice</p>
+              <a href="mailto:mottet.isabelle@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">mottet.isabelle@gmail.com</a>
+            </li>
+            <li class="rounded-2xl bg-brand-50 p-5 ring-1 ring-brand-500/10">
+              <p class="font-display text-lg font-semibold text-stone-900">Annicq Parmentier</p>
+              <p class="mt-0.5 text-sm font-medium text-brand-700">Administratrice</p>
+              <a href="mailto:annicq.parmentier@gmail.com" class="mt-3 inline-block text-sm break-all text-stone-600 hover:text-brand-700">annicq.parmentier@gmail.com</a>
+            </li>
+          </ul>
+
+          <div class="mt-12 grid grid-cols-1 gap-6 rounded-3xl bg-brand-50 p-8 ring-1 ring-brand-500/10 sm:grid-cols-3">
+            <div class="flex items-start gap-4">
+              <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z" />
+              </svg>
+              <div>
+                <p class="font-semibold text-stone-900">Résidence sociale</p>
+                <p class="mt-1 text-sm text-stone-600">142 chaussée de Liège<br />6900 Marche-en-Famenne, Belgique</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              <div>
+                <p class="font-semibold text-stone-900">E-mail</p>
+                <a href="mailto:choralelatouraline@gmail.com" class="mt-1 inline-block text-sm break-all text-stone-600 hover:text-brand-700">choralelatouraline@gmail.com</a>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <svg class="size-6 h-lh shrink-0 stroke-brand-500" viewBox="0 0 24 24" fill="none" stroke-width="1.5" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z" />
+              </svg>
+              <div>
+                <p class="font-semibold text-stone-900">Téléphone</p>
+                <a href="tel:+32478921017" class="mt-1 inline-block text-sm text-stone-600 hover:text-brand-700">+32 486 78 88 83</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</x-layouts.site>
